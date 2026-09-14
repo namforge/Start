@@ -80,9 +80,13 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "namforge"
+          git config --global user.email "namforge@users.noreply.github.com"
           git add data/delays.db data/delays.json frontend/src/data/delays.json frontend/public/data/delays.json
           if ! git diff --staged --quiet; then
-            git commit -m "chore(data): record cron run for $(date -u +'%Y-%m-%d') [skip ci]"
+            git commit -m "chore(data): record cron run for $(date -u +'%Y-%m-%d') [skip ci]" \
+              --author="namforge <namforge@users.noreply.github.com>" \
+              --trailer "Co-authored-by: timeline25 <timeline25@users.noreply.github.com>"
             git push
           else
             echo "No database changes to commit."
@@ -102,7 +106,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: 'frontend/dist'
 
