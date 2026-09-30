@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-29T03:31:02.811929+00:00",
+  "generated_at": "2026-09-30T03:30:42.958898+00:00",
   "summary": {
-    "total_runs": 1127,
+    "total_runs": 1128,
     "all_time_avg_minutes": 6.9,
-    "last_week_avg_minutes": 13.76,
-    "last_month_avg_minutes": 40.81,
+    "last_week_avg_minutes": 14.04,
+    "last_month_avg_minutes": 41.07,
     "yearly_averages": [
       {
         "year": 2023,
@@ -23,23 +23,11 @@
       },
       {
         "year": 2026,
-        "avg_delay_minutes": 9.84,
-        "run_count": 282
+        "avg_delay_minutes": 9.86,
+        "run_count": 283
       }
     ],
     "last_week_runs": [
-      {
-        "id": 2216,
-        "scheduled_time": "2026-09-23T03:14:00+00:00",
-        "actual_time": "2026-09-23T03:28:31.385582+00:00",
-        "delay_seconds": 871.385582,
-        "delay_minutes": 14.52,
-        "trigger_type": "schedule",
-        "github_run_id": "35814454674",
-        "github_run_number": 24,
-        "notes": "Triggered by schedule",
-        "created_at": "2026-09-23T03:28:31.385597+00:00"
-      },
       {
         "id": 2217,
         "scheduled_time": "2026-09-24T03:14:00+00:00",
@@ -123,34 +111,34 @@
         "github_run_number": 31,
         "notes": "Triggered by schedule",
         "created_at": "2026-09-29T03:31:02.806108+00:00"
+      },
+      {
+        "id": 2224,
+        "scheduled_time": "2026-09-30T03:14:00+00:00",
+        "actual_time": "2026-09-30T03:30:42.953319+00:00",
+        "delay_seconds": 1002.953319,
+        "delay_minutes": 16.72,
+        "trigger_type": "schedule",
+        "github_run_id": "36664712043",
+        "github_run_number": 32,
+        "notes": "Triggered by schedule",
+        "created_at": "2026-09-30T03:30:42.953338+00:00"
       }
     ],
     "latest_run": {
-      "id": 2223,
-      "scheduled_time": "2026-09-29T03:14:00+00:00",
-      "actual_time": "2026-09-29T03:31:02.806085+00:00",
-      "delay_seconds": 1022.806085,
-      "delay_minutes": 17.05,
+      "id": 2224,
+      "scheduled_time": "2026-09-30T03:14:00+00:00",
+      "actual_time": "2026-09-30T03:30:42.953319+00:00",
+      "delay_seconds": 1002.953319,
+      "delay_minutes": 16.72,
       "trigger_type": "schedule",
-      "github_run_id": "36517470864",
-      "github_run_number": 31,
+      "github_run_id": "36664712043",
+      "github_run_number": 32,
       "notes": "Triggered by schedule",
-      "created_at": "2026-09-29T03:31:02.806108+00:00"
+      "created_at": "2026-09-30T03:30:42.953338+00:00"
     }
   },
   "runs": [
-    {
-      "id": 1724,
-      "scheduled_time": "2025-05-28T03:14:00+00:00",
-      "actual_time": "2025-05-28T03:20:50.300000+00:00",
-      "delay_seconds": 410.3,
-      "delay_minutes": 6.84,
-      "trigger_type": "cron",
-      "github_run_id": "sim-468",
-      "github_run_number": 628,
-      "notes": "Historical cron run",
-      "created_at": "2025-05-28T03:20:50.300000+00:00"
-    },
     {
       "id": 1725,
       "scheduled_time": "2025-05-29T03:14:00+00:00",
@@ -6138,6 +6126,18 @@
       "github_run_number": 31,
       "notes": "Triggered by schedule",
       "created_at": "2026-09-29T03:31:02.806108+00:00"
+    },
+    {
+      "id": 2224,
+      "scheduled_time": "2026-09-30T03:14:00+00:00",
+      "actual_time": "2026-09-30T03:30:42.953319+00:00",
+      "delay_seconds": 1002.953319,
+      "delay_minutes": 16.72,
+      "trigger_type": "schedule",
+      "github_run_id": "36664712043",
+      "github_run_number": 32,
+      "notes": "Triggered by schedule",
+      "created_at": "2026-09-30T03:30:42.953338+00:00"
     }
   ]
 }
