@@ -4,26 +4,6 @@ on:
   schedule:
     # Runs every morning at 03:14 UTC
     - cron: '14 3 * * *'
-  workflow_dispatch:
-    inputs:
-      notes:
-        description: 'Optional run notes / description'
-        required: false
-        default: 'Manual test run'
-      delay_seconds:
-        description: 'Simulated delay in seconds (leave blank for real elapsed time)'
-        required: false
-        default: ''
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - 'data/**'
-      - 'frontend/src/data/**'
-      - 'frontend/public/data/**'
-      - 'README.md'
-      - 'CHANGELOG.md'
-      - 'AGENTS.md'
 
 permissions:
   contents: write
@@ -65,16 +45,10 @@ jobs:
       - name: Record cron delay in SQLite & export JSON
         id: record_delay
         run: |
-          EXTRA_ARGS=""
-          if [ -n "${{ github.event.inputs.delay_seconds }}" ]; then
-            EXTRA_ARGS="--delay-seconds ${{ github.event.inputs.delay_seconds }}"
-          fi
-
           python3 scripts/record_delay.py \
             --trigger-type "${{ github.event_name }}" \
             --run-id "${{ github.run_id }}" \
-            --run-number "${{ github.run_number }}" \
-            $EXTRA_ARGS
+            --run-number "${{ github.run_number }}"
 
       - name: Commit and push updated database & JSON
         run: |
