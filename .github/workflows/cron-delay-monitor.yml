@@ -4,6 +4,17 @@ on:
   schedule:
     # Runs every morning at 03:14 UTC
     - cron: '14 3 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'data/**'
+      - 'frontend/src/data/**'
+      - 'frontend/public/data/**'
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - 'AGENTS.md'
 
 permissions:
   contents: write
@@ -44,6 +55,7 @@ jobs:
 
       - name: Record cron delay in SQLite & export JSON
         id: record_delay
+        if: github.event_name == 'schedule'
         run: |
           python3 scripts/record_delay.py \
             --trigger-type "${{ github.event_name }}" \
@@ -51,6 +63,7 @@ jobs:
             --run-number "${{ github.run_number }}"
 
       - name: Commit and push updated database & JSON
+        if: github.event_name == 'schedule'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
