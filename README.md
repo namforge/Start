@@ -1,6 +1,7 @@
 # GitHub Actions Cron Delay Tracker ⏱️📊
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Release: v1.0](https://img.shields.io/badge/Release-v1.0-emerald.svg)](https://github.com/namvamo123-glitch/Start/releases/tag/v1.0)
 [![Cron: 03:14 UTC](https://img.shields.io/badge/Cron-03%3A14%20UTC-indigo.svg)](https://github.com/)
 [![Database: SQLite](https://img.shields.io/badge/Database-SQLite%203-lightgrey.svg)](https://sqlite.org/)
 [![UI: Vite + React](https://img.shields.io/badge/Dashboard-Vite%20%2B%20React-purple.svg)](https://vitejs.dev/)

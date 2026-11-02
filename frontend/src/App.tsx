@@ -59,11 +59,14 @@ export const App: React.FC = () => {
               <Clock className="w-5 h-5 text-white" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
                 <h1 className="text-base sm:text-lg font-bold text-white tracking-tight">
                   GitHub Actions Cron Delay Tracker
                 </h1>
-                <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-indigo-950 text-indigo-400 border border-indigo-800/50">
+                <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">
+                  v1.0
+                </span>
+                <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded-full bg-slate-800 text-slate-400 border border-slate-700/50">
                   03:14 UTC Daily
                 </span>
               </div>
@@ -196,6 +199,8 @@ export const App: React.FC = () => {
           <div className="flex items-center gap-2">
             <GitBranch className="w-4 h-4 text-indigo-400" />
             <span>Automated via GitHub Actions cron (<code className="text-slate-300">14 3 * * *</code>)</span>
+            <span className="text-slate-600">•</span>
+            <span className="font-mono text-slate-300 font-medium">v1.0</span>
           </div>
           <div>
             <span>Data stored in SQLite repository file: <code className="text-slate-300">data/delays.db</code></span>

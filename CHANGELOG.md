@@ -5,7 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2026-09-08
+## [1.0.0] - 2026-11-02
+
+### General
+- Official **v1.0** production release of the GitHub Actions Cron Delay Tracker.
+- Successfully operated continuously in production since early September 2026, recording daily runner startup jitter across dozens of automated cron runs with full stability.
+- Added version badge (`v1.0`) directly into the web dashboard header, footer, and page title.
+- Verified and refreshed static assets for GitHub Pages deployment.
 
 ### Added
 - **Cron Delay Tracking Engine (`scripts/record_delay.py`)**:
