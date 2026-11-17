@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T11:23:44.125636+00:00",
+  "generated_at": "2026-11-17T11:54:49.471912+00:00",
   "summary": {
-    "total_runs": 1176,
-    "all_time_avg_minutes": 20.76,
-    "last_week_avg_minutes": 473.43,
-    "last_month_avg_minutes": 419.41,
+    "total_runs": 1177,
+    "all_time_avg_minutes": 21.19,
+    "last_week_avg_minutes": 474.97,
+    "last_month_avg_minutes": 426.86,
     "yearly_averages": [
       {
         "year": 2023,
@@ -23,35 +23,11 @@
       },
       {
         "year": 2026,
-        "avg_delay_minutes": 58.66,
-        "run_count": 331
+        "avg_delay_minutes": 60.06,
+        "run_count": 332
       }
     ],
     "last_week_runs": [
-      {
-        "id": 2265,
-        "scheduled_time": "2026-11-09T03:14:00+00:00",
-        "actual_time": "2026-11-09T11:36:16.894788+00:00",
-        "delay_seconds": 30136.894788,
-        "delay_minutes": 502.28,
-        "trigger_type": "schedule",
-        "github_run_id": "42610329217",
-        "github_run_number": 73,
-        "notes": "Triggered by schedule",
-        "created_at": "2026-11-09T11:36:16.894806+00:00"
-      },
-      {
-        "id": 2266,
-        "scheduled_time": "2026-11-10T03:14:00+00:00",
-        "actual_time": "2026-11-10T11:15:11.027641+00:00",
-        "delay_seconds": 28871.027641,
-        "delay_minutes": 481.18,
-        "trigger_type": "schedule",
-        "github_run_id": "42805909320",
-        "github_run_number": 74,
-        "notes": "Triggered by schedule",
-        "created_at": "2026-11-10T11:15:11.027666+00:00"
-      },
       {
         "id": 2267,
         "scheduled_time": "2026-11-11T03:14:00+00:00",
@@ -123,34 +99,34 @@
         "github_run_number": 80,
         "notes": "Triggered by schedule",
         "created_at": "2026-11-16T11:23:44.121081+00:00"
+      },
+      {
+        "id": 2273,
+        "scheduled_time": "2026-11-17T03:14:00+00:00",
+        "actual_time": "2026-11-17T11:54:49.468041+00:00",
+        "delay_seconds": 31249.468041,
+        "delay_minutes": 520.82,
+        "trigger_type": "schedule",
+        "github_run_id": "44078215239",
+        "github_run_number": 81,
+        "notes": "Triggered by schedule",
+        "created_at": "2026-11-17T11:54:49.468055+00:00"
       }
     ],
     "latest_run": {
-      "id": 2272,
-      "scheduled_time": "2026-11-16T03:14:00+00:00",
-      "actual_time": "2026-11-16T11:23:44.121063+00:00",
-      "delay_seconds": 29384.121063,
-      "delay_minutes": 489.74,
+      "id": 2273,
+      "scheduled_time": "2026-11-17T03:14:00+00:00",
+      "actual_time": "2026-11-17T11:54:49.468041+00:00",
+      "delay_seconds": 31249.468041,
+      "delay_minutes": 520.82,
       "trigger_type": "schedule",
-      "github_run_id": "43857276770",
-      "github_run_number": 80,
+      "github_run_id": "44078215239",
+      "github_run_number": 81,
       "notes": "Triggered by schedule",
-      "created_at": "2026-11-16T11:23:44.121081+00:00"
+      "created_at": "2026-11-17T11:54:49.468055+00:00"
     }
   },
   "runs": [
-    {
-      "id": 1773,
-      "scheduled_time": "2025-07-16T03:14:00+00:00",
-      "actual_time": "2025-07-16T03:17:18.200000+00:00",
-      "delay_seconds": 198.2,
-      "delay_minutes": 3.3,
-      "trigger_type": "cron",
-      "github_run_id": "sim-419",
-      "github_run_number": 677,
-      "notes": "Historical cron run",
-      "created_at": "2025-07-16T03:17:18.200000+00:00"
-    },
     {
       "id": 1774,
       "scheduled_time": "2025-07-17T03:14:00+00:00",
@@ -6138,6 +6114,18 @@
       "github_run_number": 80,
       "notes": "Triggered by schedule",
       "created_at": "2026-11-16T11:23:44.121081+00:00"
+    },
+    {
+      "id": 2273,
+      "scheduled_time": "2026-11-17T03:14:00+00:00",
+      "actual_time": "2026-11-17T11:54:49.468041+00:00",
+      "delay_seconds": 31249.468041,
+      "delay_minutes": 520.82,
+      "trigger_type": "schedule",
+      "github_run_id": "44078215239",
+      "github_run_number": 81,
+      "notes": "Triggered by schedule",
+      "created_at": "2026-11-17T11:54:49.468055+00:00"
     }
   ]
 }
