@@ -3,7 +3,7 @@ name: Cron Delay Tracker & Dashboard Deployment
 on:
   schedule:
     # Runs every morning at 03:14 UTC
-    - cron: '14 3 * * *'
+    - cron: '14 3 17 * *'
   workflow_dispatch:
     inputs:
       notes:
