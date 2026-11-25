@@ -35,7 +35,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  track-and-deploy:
+  track-and-build:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -110,6 +110,19 @@ jobs:
         with:
           path: 'frontend/dist'
 
+  deploy:
+    needs: track-and-build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
